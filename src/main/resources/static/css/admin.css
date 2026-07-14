@@ -1,0 +1,427 @@
+/* ===================================
+   GOOGLE FONT
+=================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===================================
+   GLOBAL
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#f4f7fb;
+
+}
+
+.wrapper{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ===================================
+   SIDEBAR
+=================================== */
+
+.sidebar{
+
+    width:260px;
+
+    background:#0f172a;
+
+    color:#fff;
+
+    padding:25px;
+
+    position:fixed;
+
+    height:100vh;
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.logo i{
+
+    font-size:55px;
+
+    color:#38bdf8;
+
+    margin-bottom:10px;
+
+}
+
+.logo h3{
+
+    font-weight:700;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding-left:0;
+
+}
+
+.sidebar ul li{
+
+    padding:15px;
+
+    margin-bottom:10px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active{
+
+    background:#1e293b;
+
+}
+
+/* ===================================
+   MAIN CONTENT
+=================================== */
+
+.main-content{
+
+    margin-left:260px;
+
+    width:100%;
+
+    padding:30px;
+
+}
+
+/* ===================================
+   TOPBAR
+=================================== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.topbar h2{
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.topbar p{
+
+    color:#64748b;
+
+}
+
+.top-right{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/* ===================================
+   DASHBOARD CARDS
+=================================== */
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.stat-card h5{
+
+    color:#64748b;
+
+    margin-top:15px;
+
+}
+
+.stat-card h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.icon{
+
+    font-size:45px;
+
+}
+
+.blue{
+
+    color:#2563eb;
+
+}
+
+.green{
+
+    color:#16a34a;
+
+}
+
+.orange{
+
+    color:#ea580c;
+
+}
+
+.red{
+
+    color:#dc2626;
+
+}
+/* ===================================
+   CARDS
+=================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.card-header{
+
+    background:#0f172a;
+
+    color:#fff;
+
+    border-radius:15px 15px 0 0 !important;
+
+    padding:18px 25px;
+
+}
+
+.card-header h4{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+/* ===================================
+   FORM
+=================================== */
+
+.form-control,
+.form-select{
+
+    border-radius:10px;
+
+    padding:12px;
+
+    border:1px solid #d1d5db;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:none;
+
+}
+
+textarea{
+
+    resize:none;
+
+}
+
+/* ===================================
+   BUTTONS
+=================================== */
+
+.btn{
+
+    border-radius:10px;
+
+    padding:10px 20px;
+
+    font-weight:500;
+
+}
+
+/* ===================================
+   TABLE
+=================================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    vertical-align:middle;
+
+}
+
+.table td,
+.table th{
+
+    vertical-align:middle;
+
+}
+
+.table-hover tbody tr:hover{
+
+    background:#eef4ff;
+
+}
+
+/* ===================================
+   BADGES
+=================================== */
+
+.badge{
+
+    padding:8px 12px;
+
+    font-size:13px;
+
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+.footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    border-top:1px solid #ddd;
+
+    color:#6b7280;
+
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:991px){
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+        padding:20px;
+
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .top-right{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .stat-card{
+
+        padding:20px;
+
+    }
+
+    .icon{
+
+        font-size:35px;
+
+    }
+
+    .stat-card h2{
+
+        font-size:28px;
+
+    }
+
+}

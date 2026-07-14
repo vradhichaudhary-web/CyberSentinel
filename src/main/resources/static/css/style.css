@@ -1,0 +1,759 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#0b1120;
+
+    color:#fff;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+/* ==========================
+   WRAPPER
+========================== */
+
+.wrapper{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar{
+
+    width:270px;
+
+    background:linear-gradient(180deg,#111827,#0f172a);
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    height:100vh;
+
+    padding:35px 25px;
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:55px;
+
+}
+
+.logo i{
+
+    font-size:40px;
+
+    color:#38bdf8;
+
+}
+
+.logo span{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:15px 18px;
+
+    margin-bottom:12px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    color:#cbd5e1;
+
+    font-size:16px;
+
+}
+
+.sidebar ul li i{
+
+    width:25px;
+
+    text-align:center;
+
+}
+
+.sidebar ul li:hover{
+
+    background:#1e293b;
+
+    color:#38bdf8;
+
+    transform:translateX(6px);
+
+}
+
+.sidebar ul li.active{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* ==========================
+   MAIN CONTENT
+========================== */
+
+.main-content{
+
+    flex:1;
+
+    margin-left:270px;
+
+    padding:35px;
+
+}
+
+/* ==========================
+   TOPBAR
+========================== */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.topbar h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.topbar p{
+
+    color:#94a3b8;
+
+    margin-top:8px;
+
+}
+
+.top-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.top-right input{
+
+    width:300px;
+
+    background:#1e293b;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+}
+
+.top-right input::placeholder{
+
+    color:#94a3b8;
+
+}
+
+.top-right i{
+
+    font-size:22px;
+
+    color:#38bdf8;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.top-right i:hover{
+
+    transform:scale(1.15);
+
+}
+
+.profile{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    border:3px solid #38bdf8;
+
+    object-fit:cover;
+
+}
+
+/* ==========================
+   DASHBOARD CARDS
+========================== */
+
+.stat-card{
+
+    background:linear-gradient(135deg,#1e293b,#334155);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.35);
+
+}
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:white;
+
+}
+
+.blue{
+
+    background:#2563eb;
+
+}
+
+.green{
+
+    background:#10b981;
+
+}
+
+.red{
+
+    background:#ef4444;
+
+}
+
+.yellow{
+
+    background:#f59e0b;
+
+}
+
+.stat-card h5{
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+/* ==========================
+   RISK CARDS
+========================== */
+
+.risk-card{
+
+    border-radius:18px;
+
+    padding:30px;
+
+    color:white;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+}
+
+.risk-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.risk-card h4{
+
+    margin-bottom:15px;
+
+    font-weight:600;
+
+}
+
+.risk-card h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.high{
+
+    background:linear-gradient(135deg,#dc2626,#b91c1c);
+
+}
+
+.medium{
+
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+
+}
+
+.low{
+
+    background:linear-gradient(135deg,#10b981,#059669);
+
+}
+
+/* ==========================
+   CHART BOX
+========================== */
+
+.chart-box{
+
+    background:#1e293b;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+}
+
+.chart-box h4{
+
+    margin-bottom:20px;
+
+    color:#38bdf8;
+
+}
+
+.chart-box canvas{
+
+    width:100% !important;
+
+    height:320px !important;
+
+}
+
+/* ==========================
+   FORM BOX
+========================== */
+
+.form-box{
+
+    background:#1e293b;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+}
+
+.form-box h4{
+
+    color:#38bdf8;
+
+    margin-bottom:15px;
+
+}
+
+.form-control{
+
+    background:#0f172a !important;
+
+    color:white !important;
+
+    border:1px solid #334155 !important;
+
+}
+
+.form-control:focus{
+
+    background:#0f172a !important;
+
+    color:white !important;
+
+    border-color:#3b82f6 !important;
+
+    box-shadow:none !important;
+
+}
+
+.result-box{
+
+    min-height:90px;
+
+    background:#0f172a;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    color:#e2e8f0;
+
+    border:1px solid #334155;
+
+    white-space:pre-wrap;
+
+}
+
+/* ==========================
+   HISTORY TABLE
+========================== */
+
+.history-box{
+
+    background:#1e293b;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.30);
+
+}
+
+.history-box h3{
+
+    color:#38bdf8;
+
+}
+
+.table{
+
+    margin-top:20px;
+
+}
+
+.table thead{
+
+    background:#2563eb;
+
+}
+
+.table th{
+
+    border:none !important;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.footer{
+
+    margin-top:40px;
+
+    color:#94a3b8;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:20px;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn-primary{
+
+    background:#2563eb;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-danger{
+
+    border:none;
+
+}
+
+.btn-outline-info{
+
+    border-radius:10px;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:991px){
+
+    .sidebar{
+
+        width:90px;
+
+        padding:20px 10px;
+
+    }
+
+    .logo span{
+
+        display:none;
+
+    }
+
+    .sidebar ul li{
+
+        justify-content:center;
+
+    }
+
+    .sidebar ul li{
+
+        font-size:0;
+
+    }
+
+    .sidebar ul li i{
+
+        font-size:20px;
+
+        margin:0;
+
+    }
+
+    .main-content{
+
+        margin-left:90px;
+
+        padding:20px;
+
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .top-right{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .top-right input{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .main-content{
+
+        margin-left:0;
+
+        padding:15px;
+
+    }
+
+    .sidebar{
+
+        display:none;
+
+    }
+
+    .topbar h2{
+
+        font-size:26px;
+
+    }
+
+    .chart-box canvas{
+
+        height:250px !important;
+
+    }
+
+    .stat-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .risk-card h1{
+
+        font-size:38px;
+
+    }
+
+}
